@@ -17,3 +17,6 @@ gem "bootstrap-sass", require: false
 
 # Deploying
 gem "middleman-deploy", "~> 0.3.0"
+
+gem "sinatra"
+gem "pony"

@@ -1,0 +1,21 @@
+.container
+  .row
+    .col-md-12
+      .lead Fill out the fields and submit to contact me.
+
+      %form.form-horizontal{action: "/contact", role: "form", method: "post"}
+        .form-group
+          %label.col-sm-2.control-label{for: "email"} Email:
+          .col-sm-10
+            %input.form-control{type: "email", name: "email", id: "email", placeholder: "Email Address"}
+        .form-group
+          %label.col-sm-2.control-label{for: "subject"} Subject:
+          .col-sm-10
+            %input.form-control{type: "text", name: "subject", id: "subject", placeholder: "Reason for Contact?"}
+        .form-group
+          %label.col-sm-2.control-label{for: "message-body"} Message:
+          .col-sm-10
+            %textarea.form-control{rows: "5"}
+        .form-group
+          .col-sm-offset-2.col-sm-10
+            %input.btn.btn-primary{type: "submit", name: "submit", value: "Send Contact Form"}
