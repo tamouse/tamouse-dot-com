@@ -1,0 +1,25 @@
+@import "foundation/functions";
+
+// Settings
+$topbar-height: 90px;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+
+@import "foundation";
+
+.top-bar h1 {
+    color: $white;
+    text-align: center;
+}
+
+#content {
+    margin-top: $topbar-height;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer {
+    text-align: center;
+}
