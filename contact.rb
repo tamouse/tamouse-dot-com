@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "bundler/setup"
 require "sinatra/base"
 require "yaml"
 require "pony"
@@ -7,7 +10,7 @@ module MailHelpers
     Pony.mail({
       :to => 'tamouse.lists@gmail.com',
       :subject => "Contact from tamouse.com",
-      :body => params.to_yaml,
+      :body => make_message_body(params),
       :via => :smtp,
       :via_options => {
         :address              => 'smtp.gmail.com',
@@ -19,6 +22,22 @@ module MailHelpers
         :domain               => "localhost.localdomain" # the HELO domain provided by the client to the server
       }
     })
+  end
+
+  def make_message_body(params)
+    %Q{
+Contact message from tamouse.com site:
+
+
+Email:    #{params["email"]}
+Subject:  #{params["subject"]}
+
+Message:
+
+#{params["message"]}
+
+Sent:     #{Time.now.to_s}
+    }
   end
 end
 
