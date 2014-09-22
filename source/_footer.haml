@@ -1,6 +1,27 @@
-.footer
-  %h6
-    Copyright &copy; 
-    = Date.today.year 
-    Tamara Temple Web Development
+.well.well-lg
+  .row
+    .col-md-6
+      .text-muted
+        :markdown
+          Copyright &copy; 2014 [Tamara Temple Web Development](#)
+
+          Built with [middleman](http://middlemanapp.com), [bootstrap](http://getbootstrap.com), and love.
+
+    .col-md-2.col-md-offset-4
+      %ul.fa-ul
+        %li
+          %i.fa-li.fa.fa-github.fa-lg
+          %a{href: "https://github.com/tamouse"} github
+        %li
+          %i.fa-li.fa.fa-twitter.fa-lg
+          %a{href: "http://twitter.com/tamouse"} twitter
+        %li
+          %i.fa-li.fa.fa-facebook.fa-lg
+          %a{href: "https://www.facebook.com/pontikiweb/"} facebook
+        %li
+          %i.fa-li.fa.fa-google-plus-square.fa-lg
+          %a{href: "https://plus.google.com/+TamaraTemple/"} google+
+        %li
+          %a{href: "humans.txt"}
+            %img{src: "img/humanstxt-isolated-blank.gif"}
 

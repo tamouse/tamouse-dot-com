@@ -1,15 +1,18 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+# See humanstxt.org/
 
-# TEAM
-
-    Tamara Temple -- Everything -- tamouse
-
-# THANKS
-
-    HTML5 teams, Middleman team
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+/* TEAM */
+Developer: Tamara Temple
+Site: tamouse@gmail.com
+Twitter: tamouse
+Location: Minneapolis, Minnesota, USA
+              
+/* THANKS */
+Middleman: http://middlemanapp.com
+HTML5boilerplate: http://html5boilerplate.com
+Twitter Bootstrap: http://getboostrap.com
+                            
+/* SITE */
+Last update: 2014/09/21
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, 
+Software: Middleman, Bootstrap, HAML, SCSS, Coffeescript
